@@ -1,4 +1,4 @@
-package br.com.alura.screenmatch.modelos;
+package br.com.alura.screenmatch.models;
 
 public class Titulo {
     private String nome;
@@ -8,10 +8,19 @@ public class Titulo {
     private int totalDeAvaliacoes;
     private int duracaoEmMinutos;
 
+    Titulo(String nome, int anoDeLancamento){
+        this.nome = nome;
+        this.anoDeLancamento = anoDeLancamento;
+    }
+
     public String getNome() {
         return nome;
     }
 
+    // public void setNome(String nome) {
+    //     this.nome = nome;
+    // }
+    
     public int getAnoDeLancamento() {
         return anoDeLancamento;
     }
@@ -28,9 +37,6 @@ public class Titulo {
         return totalDeAvaliacoes;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
 
     public void setAnoDeLancamento(int anoDeLancamento) {
         this.anoDeLancamento = anoDeLancamento;
