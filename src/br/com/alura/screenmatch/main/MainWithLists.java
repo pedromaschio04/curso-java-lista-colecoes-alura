@@ -1,6 +1,7 @@
 package br.com.alura.screenmatch.main;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 import br.com.alura.screenmatch.models.Filme;
 import br.com.alura.screenmatch.models.Serie;
@@ -46,5 +47,22 @@ public class MainWithLists {
         // forEach da interface List com method reference
         // listaDeTitulos.forEach(System.out::println);
         // :: faz referência ao método println
+
+        System.out.println("\n###############################\n");
+        // Cria e ordena listas de string
+        ArrayList<String> buscaPorArtista = new ArrayList<>();
+        buscaPorArtista.add("Maria");
+        buscaPorArtista.add("Pedro");
+        buscaPorArtista.add("Chico");
+        System.out.println(buscaPorArtista);
+        Collections.sort(buscaPorArtista);
+        System.out.println("\nDepois da Ordenação\n");
+        System.out.println(buscaPorArtista);
+
+        System.out.println("\n###############################");
+        System.out.println(listaDeTitulos);
+        Collections.sort(listaDeTitulos);
+        System.out.println("\nDepois da Ordenação\n");
+        System.out.println(listaDeTitulos);
     }
 }
